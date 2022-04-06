@@ -1,0 +1,11 @@
+//importing express
+//typical express convention
+//const app = require('express');
+//can also be done
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+	res.send('hello world');
+});
+
+app.listen(4000);
